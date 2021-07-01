@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema({
         require: true,
         min:3,
         max:20,
-        unique:true
+        unique:true,
     },
     email:{
         type:String,
@@ -21,11 +21,11 @@ const UserSchema = new mongoose.Schema({
     },
     profilePicture:{
         type:String,
-        default:""
+        default:"",
     },
     coverPicture:{
         type:String,
-        default:""
+        default:"",
     },
     followers:{
         type:Array,
@@ -33,7 +33,7 @@ const UserSchema = new mongoose.Schema({
     },
     followings:{
         type:Array,
-        default:[]
+        default:[],
     },
     isAdmin:{
         type:Boolean,
@@ -41,15 +41,15 @@ const UserSchema = new mongoose.Schema({
     },
     desc:{
         type:String,
-        max:50
+        max:50,
     },
     city:{
         type:String,
-        max:50
+        max:50,
     },
     from:{
         type:String,
-        max:50
+        max:50,
     },
     relationship:{
         type:Number,
