@@ -4,7 +4,7 @@ const PostSchema = new mongoose.Schema(
     {
         userId:{
             type:String,
-            require:true
+            required:true
         },
         desc:{
             type:String,
